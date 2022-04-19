@@ -11,14 +11,14 @@
             			<group>
                             <field name="company_id" groups="base.group_multi_company"/>
                         </group>
-                        <group>
-                            <field
-                                    name="company_ids"
-                                    groups="base.group_multi_company"
-                                    widget="many2many_tags"
-                                    options="{'no_create': True}"
-                                />
-                        </group>
+<!--                        <group>-->
+<!--                            <field-->
+<!--                                    name="company_ids"-->
+<!--                                    groups="base.group_multi_company"-->
+<!--                                    widget="many2many_tags"-->
+<!--                                    options="{'no_create': True}"-->
+<!--                                />-->
+<!--                        </group>-->
             		</page>
             	</xpath>
 
