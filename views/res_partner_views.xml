@@ -7,7 +7,7 @@
             <field name="inherit_id" ref="base.view_partner_form"/>
             <field name="arch" type="xml">
                 <xpath expr="//notebook" position="inside">
-            		<page string="Compañias">
+            		<page string="Compañias" groups="base.group_multi_company">
             			<group>
                             <field name="company_id" groups="base.group_multi_company"/>
                         </group>
