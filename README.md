@@ -1,1 +1,1 @@
-# partner_multi_company
+product_multi_company
