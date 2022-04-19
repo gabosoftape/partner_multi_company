@@ -15,6 +15,7 @@ class ResPartner(models.Model):
         readonly=True,
         help="Effectively a One2one field to represent the corresponding res.company",
     )
+<<<<<<< HEAD
     origin_company_id = fields.Many2one(
         "res.company",
         compute="_compute_origin_company_id",
@@ -24,6 +25,15 @@ class ResPartner(models.Model):
         "That way, we can share the contact by setting company_id to null, "
         "without losing any information. If null, the contact is not shared.",
         index=True,
+=======
+    company_id = fields.Many2one(
+        string="Company",
+        comodel_name="res.company",
+        compute="_compute_company_id",
+        inverse="_inverse_company_id",
+        search="_search_company_id",
+        default=lambda self: self._default_company_id(),
+>>>>>>> 4137c18... minor fix
     )
 
     @api.depends("res_company_id", "parent_id.origin_company_id")
