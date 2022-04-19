@@ -1,5 +1,5 @@
 # Copyright 2022 Kaliawiri (https://www.kaliawiri.com).
-# @author GABRIEL PABO <gabriel@kaliawiri.com>
+# @author GABRIEL PABON <gabriel@kaliawiri.com>
 # License AGPL-3.0 or later (https://www.gnu.org/licenses/agpl).
 
 from odoo import api, models
