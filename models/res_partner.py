@@ -33,7 +33,6 @@ class ResPartner(models.Model):
         inverse="_inverse_company_id",
         search="_search_company_id",
         default=lambda self: self._default_company_id(),
->>>>>>> 4137c18... minor fix
     )
 
     @api.depends("res_company_id", "parent_id.origin_company_id")
