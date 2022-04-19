@@ -12,5 +12,6 @@
     "depends": ["base_multi_company", "contacts"],
     "data": [
         "views/res_partner_views.xml",
+        "security/partner_multi_company_security.xml",
     ],
 }
