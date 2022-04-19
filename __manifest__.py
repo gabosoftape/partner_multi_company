@@ -9,9 +9,8 @@
     "category": "Product Management",
     "version": "15.0.2.0.1",
     "license": "AGPL-3",
-    "depends": ["base_multi_company", "base"],
+    "depends": ["base_multi_company", "contacts"],
     "data": [
-        "views/res_partner_views.xml",
         "security/partner_multi_company_security.xml",
     ],
 }
