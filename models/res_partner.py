@@ -17,7 +17,7 @@ class ResPartner(models.Model):
         compute="_compute_company_id",
         inverse="_inverse_company_id",
         search="_search_company_id",
-        default="_default_company_id",
+        default=lambda self: self._default_company_id(),
     )
 
     def _default_company_id(self):
