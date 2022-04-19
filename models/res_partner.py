@@ -11,5 +11,14 @@ class ResPartner(models.Model):
         comodel_name="res.company",
         default=lambda self: self._default_company_ids(),
     )
+    company_id = fields.Many2one(
+        string="Company",
+        comodel_name="res.company",
+        compute="_compute_company_id",
+        inverse="_inverse_company_id",
+        search="_search_company_id",
+        default="_default_company_id",
+    )
 
-
+    def _default_company_id(self):
+        return self.browse(self.env.company.ids)
